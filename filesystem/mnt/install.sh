@@ -8,3 +8,6 @@ ssh-keygen -t rsa -b 4096 -q -N ""
 echo $SSH_AUTHORIZED_KEYS | base64 --decode > ~/.ssh/authorized_keys
 
 sh /mnt/setup-ca.sh
+
+# Longhorn uses open-iscsi to create block devices.
+apt-get install -y open-iscsi
