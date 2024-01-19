@@ -9,5 +9,5 @@ echo $SSH_AUTHORIZED_KEYS | base64 --decode > ~/.ssh/authorized_keys
 
 sh /mnt/setup-ca.sh
 
-# Longhorn uses open-iscsi to create block devices.
+# Longhorn uses open-iscsi to create block devices for distributed storage
 apt-get install -y open-iscsi
